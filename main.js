@@ -9,7 +9,16 @@ function crazyCase(str) {
 }
 return answer;
 }
-function ciEmailify() {
+function ciEmailify(name) {
+  let answer = '';
+  for (let i = 0; i < name.length; i++){
+    if(name[i] === ' '){
+      answer = answer + '.';
+    }else {
+      answer = answer + name[i];
+    }
+  }
+  return answer.toLowerCase() + '@codeimmersives.com';
 }
 
 function exclaim(str) {
