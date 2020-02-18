@@ -12,7 +12,16 @@ return answer;
 function ciEmailify() {
 }
 
-function exclaim() {
+function exclaim(str) {
+  let answer = '';
+  for (let i = 0; i < str.length; i++){
+    if (str[i] === '?' || str[i] === '.'){
+      answer = answer + "!";
+    } else {
+      answer = answer + str[i];
+  }
+}
+return answer;
 }
 
 function reverse() {
